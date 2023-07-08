@@ -7,8 +7,7 @@ export default function Modal({children, open, setOpen, Action, size}) {
     <>
         <Action />
         <Dialog open={open} size={size} handler={handleOpen}>
-            <DialogBody>
-                Hello World!
+            <DialogBody className='flex flex-col px-8'>
                 {children}
             </DialogBody>
         </Dialog>
